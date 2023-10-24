@@ -1,5 +1,5 @@
 const newWrap = document.createElement("div");
-const punto = document.querySelector('br');
+const puntoRef = document.querySelector('br');
 newWrap.classList = "row featurette";
 
 const newDiv1 = document.createElement("div");
@@ -33,6 +33,6 @@ newWrap.appendChild(newDiv2);
 newDiv2.appendChild(newImg);
 
 const insertar = document.querySelector("#customDOM");
-insertar.insertBefore(newWrap, punto);
+insertar.insertBefore(newWrap, puntoRef);
 
 console.log(newWrap);
