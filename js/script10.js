@@ -24,6 +24,7 @@ const newImg = document.createElement("img");
 newImg.classList = "img-thumbnail";
 newImg.src = "https://i.pinimg.com/1200x/24/c5/74/24c5749c9075df2f6379a7833fdf2380.jpg";
 
+// inserta el nuevo div en la página.
 newWrap.appendChild(newDiv1);
 newDiv1.appendChild(newH2);
 newH2.appendChild(newSpan);
