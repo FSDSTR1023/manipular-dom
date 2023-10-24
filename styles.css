@@ -17,3 +17,10 @@
 .card-img {
     margin: 15px 0px 40px 0px; 
 }
+
+.blue{
+    background-color: rgb(245, 245, 245);
+    padding: 19px 0px 19px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
