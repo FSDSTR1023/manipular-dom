@@ -16,13 +16,13 @@ Inserta la sección de manera que siga la disposición lógica en relación a la
 
 #### Deberás utilizar distintos atributos:
 
-- `createElement`
-- `classList`
-- `textContent`
-- `src`
-- `appendChild`
-- `querySelector`
-- `insertBefore`
+- `createElement`*
+- `classList`*
+- `textContent`*
+- `src`*
+- `appendChild`*
+- `querySelector`*
+- `insertBefore`*
 - `children`
 
 Deberás implementar la lógica en el archivo script10.js
