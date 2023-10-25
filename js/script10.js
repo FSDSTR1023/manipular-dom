@@ -1,3 +1,9 @@
+// este es el div donde incorporar el ejercicio
+//<div id="customDOM" class="container"></div>
+
+/* <hr>   <-- esto es lo que tenemos que crearen el DOM
+
+        <div class="row featurette">
 
 <div class="row featurette">
             <div class="col-md-7">
@@ -13,19 +19,23 @@
             </div>
         </div>
 
-        
-    const wrapper = document.vcreateElement('div');
-    wrapper.classList = 'row featurette'; 
-    
-    const wrapperText = document.createElement('div');
-    wrapperText.classList = 'col-mdm7';
+        <hr>
+*/
 
-    const wrapperText = document.createElement('p');
-    wrapperText.classList = 'lead';
-    wrapperTextP.textContent = 'Soy el super texto nuevo que has creado pedazo de maquina'
-    
-    wrapper.appenChild(wrapperText);
-    wrapperText.appenChild(wrapperTextP);
-    
-    const insertToDocument = document.querySelector('#customDOM');
-    insertToDocument.appenChild(wrapper);
+const customDOM = document.querySelector('#customDOM');
+const hr = document.querySelector('hr');
+let container = document.createElement('div');
+container.classList.add('row', 'featurette');
+
+customDOM.append(container);
+
+container.innerHTML = `<div class="col-md-7 order-md-2">
+                <h2 class="fw-normal lh-1">El arroz y el Campo. <span class="text-muted">Recolectando lo sembrado.</span></h2>
+                <p class="lead">El arroz es un alimento básico en muchas culturas. Es versátil y nutritivo, rico en carbohidratos y bajo en grasa. Puede ser el acompañamiento perfecto para platos principales o protagonizar recetas como el arroz frito o la paella. Su cultivo es fundamental para la seguridad alimentaria global y su historia se remonta a miles de años.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-thumbnail" src="img/arroz.jpg" alt="man colecting rice">
+            </div>`;
+
+customDOM.insertBefore(container, hr);
+console.log(customDOM);
