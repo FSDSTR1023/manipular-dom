@@ -14,6 +14,10 @@ Dicha sección ha de seguir los estilos y la estructura de los elementos que ya 
 
 Inserta la sección de manera que siga la disposición lógica en relación a la ordenación del bloque de texto y la imagen.
 
+Tendréis que utilizar el siguiente div para "inyectar" el código que vosotros créis:
+
+<div id="customDOM" class="container">
+
 #### Deberás utilizar distintos atributos:
 
 - `createElement`
